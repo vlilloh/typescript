@@ -1,0 +1,24 @@
+{
+  "author": "Vicente Lillo Hidalgo",
+  "dependencies": {
+    "@vlilloh/function": "^0.1.0",
+    "@vlilloh/object": "^0.1.0",
+    "@vlilloh/operator": "^0.1.0"
+  },
+  "description": "TypeScript",
+  "files": [ "*.d.ts", "*.js", "*.js.map" ],
+  "homepage": "https://github.com/vlilloh/ts/tree/main/packages/typescript",
+  "keywords": [
+    "TypeScript"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "module": "index.js",
+  "name": "@vlilloh/typescript",
+  "repository": {
+    "directory": "packages/typescript",
+    "type": "git",
+    "url": "https://github.com/vlilloh/ts"
+  },
+  "version": "0.1.0"
+}

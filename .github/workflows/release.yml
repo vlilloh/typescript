@@ -1,0 +1,44 @@
+name: Release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    # Prevents changesets action from creating a PR on forks
+    if: github.repository == 'vlilloh/ts'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          # Fetch all Git history so that Changesets can generate changelogs
+          # with the correct commits
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: 15
+          # Install/Publish Github Packages:
+          registry-url: https://npm.pkg.github.com
+      # Set up GitHub Actions to run cross-browser tests on Chromium, Firefox
+      # and WebKit with Playwright:
+      - uses: microsoft/playwright-github-action@v1
+      - name: Install dependencies
+        run: npm ci
+        env:
+          # Install Github Packages:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Transpile packages
+        run: npm run transpile
+      - name: Test packages
+        run: npm run test
+      - name: Create Release Pull Request or Publish to GPR/NPM
+        uses: changesets/action@master
+        with:
+          publish: npx changeset publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Publish Github Packages:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

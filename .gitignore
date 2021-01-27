@@ -1,0 +1,12 @@
+coverage
+dist
+node_modules
+packages/*/test/*.d.ts
+packages/*/test/*.js
+packages/*/test/*.js.map
+packages/*/*.d.ts
+packages/*/*.js
+packages/*/*.js.map
+packages/*/styles*.ts
+packages/*/tsconfig.tsbuildinfo
+!packages/*/env.d.ts

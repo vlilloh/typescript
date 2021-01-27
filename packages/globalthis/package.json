@@ -1,0 +1,20 @@
+{
+  "author": "Vicente Lillo Hidalgo",
+  "description": "globalThis",
+  "files": [ "*.d.ts", "*.js", "*.js.map" ],
+  "homepage": "https://github.com/vlilloh/ts/tree/main/packages/globalthis",
+  "keywords": [
+    "globalThis"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "module": "index.js",
+  "name": "@vlilloh/globalthis",
+  "repository": {
+    "directory": "packages/globalthis",
+    "type": "git",
+    "url": "https://github.com/vlilloh/ts"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}

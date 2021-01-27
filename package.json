@@ -1,0 +1,58 @@
+{
+  "author": "Vicente Lillo Hidalgo",
+  "dependencies": {
+    "tslib": "^2.1.0"
+  },
+  "description": "TypeScript",
+  "devDependencies": {
+    "@changesets/cli": "^2.13.1",
+    "@esm-bundle/chai": "^4.1.5",
+    "@open-wc/building-rollup": "^1.9.4",
+    "@types/mocha": "^8.2.0",
+    "@web/dev-server": "^0.1.5",
+    "@web/rollup-plugin-html": "^1.4.0",
+    "@web/test-runner": "^0.12.7",
+    "@web/test-runner-playwright": "^0.8.1",
+    "deepmerge": "^4.2.2",
+    "firebase-tools": "^9.2.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.38.0",
+    "rollup-plugin-copy": "^3.3.0",
+    "typescript": "^4.1.3"
+  },
+  "homepage": "https://github.com/vlilloh/ts",
+  "keywords": [
+    "TypeScript"
+  ],
+  "license": "ISC",
+  "name": "root",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vlilloh/ts"
+  },
+  "scripts": {
+    "nuke": "npm run clean && rm -rf node_modules package-lock.json",
+    "transpile": "npm run clean:transpile && tsc -b packages/*",
+    "watch:transpile": "npm run transpile:ts -- --w",
+    "clean:transpile": "tsc -b packages/* --clean",
+    "test": "wtr",
+    "watch:test": "npm run test -- --w",
+    "serve:dev": "wds",
+    "serve:dev:watch": "npm run serve:dev -- --w",
+    "bundle": "npm run clean:bundle && rollup -c",
+    "watch:bundle": "npm run bundle -- -w",
+    "clean:bundle": "rimraf dist",
+    "build": "npm run transpile && npm run bundle",
+    "watch": "npm run watch:transpile:ts & npm run watch:bundle",
+    "clean": "npm run clean:transpile && npm run clean:bundle",
+    "serve": "firebase serve",
+    "deploy": "firebase deploy",
+    "login": "npm login -reg https://npm.pkg.github.com"
+  },
+  "type": "module",
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ]
+}

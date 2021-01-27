@@ -1,0 +1,20 @@
+{
+  "author": "Vicente Lillo Hidalgo",
+  "description": "Object",
+  "files": [ "*.d.ts", "*.js", "*.js.map" ],
+  "homepage": "https://github.com/vlilloh/ts/tree/main/packages/object",
+  "keywords": [
+    "Object"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "module": "index.js",
+  "name": "@vlilloh/object",
+  "repository": {
+    "directory": "packages/object",
+    "type": "git",
+    "url": "https://github.com/vlilloh/ts"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}

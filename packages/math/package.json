@@ -1,0 +1,20 @@
+{
+  "author": "Vicente Lillo Hidalgo",
+  "description": "Math",
+  "files": [ "*.d.ts", "*.js", "*.js.map" ],
+  "homepage": "https://github.com/vlilloh/ts/tree/main/packages/math",
+  "keywords": [
+    "Math"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "module": "index.js",
+  "name": "@vlilloh/math",
+  "repository": {
+    "directory": "packages/math",
+    "type": "git",
+    "url": "https://github.com/vlilloh/ts"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}

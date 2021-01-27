@@ -1,0 +1,23 @@
+{
+  "author": "Vicente Lillo Hidalgo",
+  "dependencies": {
+    "@vlilloh/constructor": "^0.1.0"
+  },
+  "description": "Operator",
+  "files": [ "*.d.ts", "*.js", "*.js.map" ],
+  "homepage": "https://github.com/vlilloh/ts/tree/main/packages/operator",
+  "keywords": [
+    "Operator"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "module": "index.js",
+  "name": "@vlilloh/operator",
+  "repository": {
+    "directory": "packages/operator",
+    "type": "git",
+    "url": "https://github.com/vlilloh/ts"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}

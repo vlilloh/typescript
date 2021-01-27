@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "references": [
+    {"path": "../array"},
+    {"path": "../boolean"},
+    {"path": "../date"},
+    {"path": "../function"},
+    {"path": "../globalthis"},
+    {"path": "../math"},
+    {"path": "../number"},
+    {"path": "../object"},
+    {"path": "../operator"},
+    {"path": "../string"},
+    {"path": "../symbol"},
+  ]
+}

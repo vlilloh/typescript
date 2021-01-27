@@ -1,0 +1,20 @@
+{
+  "author": "Vicente Lillo Hidalgo",
+  "description": "Decorator",
+  "files": [ "*.d.ts", "*.js", "*.js.map" ],
+  "homepage": "https://github.com/vlilloh/ts/tree/main/packages/decorator",
+  "keywords": [
+    "Decorator"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "module": "index.js",
+  "name": "@vlilloh/decorator",
+  "repository": {
+    "directory": "packages/decorator",
+    "type": "git",
+    "url": "https://github.com/vlilloh/ts"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}
