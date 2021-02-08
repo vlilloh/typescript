@@ -5,7 +5,7 @@
   },
   "description": "TypeScript",
   "devDependencies": {
-    "@changesets/cli": "^2.14.0",
+    "@changesets/cli": "^2.14.1",
     "@esm-bundle/chai": "^4.3.0",
     "@open-wc/building-rollup": "^1.9.4",
     "@types/mocha": "^8.2.0",
