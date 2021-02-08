@@ -9,7 +9,7 @@
     "@esm-bundle/chai": "^4.3.0",
     "@open-wc/building-rollup": "^1.9.4",
     "@types/mocha": "^8.2.0",
-    "@web/dev-server": "^0.1.5",
+    "@web/dev-server": "^0.1.6",
     "@web/rollup-plugin-html": "^1.4.0",
     "@web/test-runner": "^0.12.7",
     "@web/test-runner-playwright": "^0.8.1",
