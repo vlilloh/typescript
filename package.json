@@ -14,7 +14,7 @@
     "@web/test-runner": "^0.12.15",
     "@web/test-runner-playwright": "^0.8.4",
     "deepmerge": "^4.2.2",
-    "firebase-tools": "^9.4.0",
+    "firebase-tools": "^9.5.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.39.0",
     "rollup-plugin-copy": "^3.4.0",
